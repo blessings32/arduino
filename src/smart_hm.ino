@@ -41,7 +41,6 @@ const int stepsPerRevolution = 200;
 // Initialize the stepper library on pins A0, A2, A1, A3
 Stepper myStepper(stepsPerRevolution, A0, A2, A1, A3);
 
-// RFID and Stepper Initialization
 MFRC522 rfid(SDA, RST); 
 byte authourizedUID[4] = {0x03, 0x4F, 0x1E, 0xF7}; // Authorized card UID
 
